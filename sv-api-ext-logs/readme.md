@@ -13,6 +13,7 @@ Available operations:
    * GET *\{log-type\}/view/\{log-suffix\}* - view a log file with particular log suffix - useful for viewing older rotated log files
    * GET *\{log-type\}/zip* - zips a log file
    * GET *\{log-type\}/zip/\{log-suffix\}* - zips rotated log file
+   * GET *list* - lists all the files inthe log folder with size and creation date
    * GET *zip-all* - zips whole log folder
    * GET *delete-all* - deletes all files from log folder (currently used log files will not be deleted as they are in use)
    
