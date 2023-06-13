@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ds version="5.6.0.1533" id="e98acca3-928f-4e8f-820f-0f4327d4c8b6" vsId="4f43d4ae-94a8-41e5-9461-62eeeb1c772f" dmId="e6b936ad-449d-4814-87ad-ccf57dc23bdc" sorId="c4b05127-dd54-4997-adcf-c92551c4bd14" hc="578802273" xmlns="http://hp.com/SOAQ/ServiceVirtualization/2010/">
+  <sc id="01516bf7-b439-4280-9a27-f2074cf69cf9" ts="2023-06-13T10:21:01.9493669Z" ri="1" rc="1" rr="false">
+    <ntId p="4:1">empty</ntId>
+    <ntId p="6:1">empty</ntId>
+    <s p="8:1">200</s>
+    <s p="10:1">text/plain</s>
+    <s p="11:1">sim_default_Content-Encoding</s>
+    <s p="12:1">sim_default_Content-Disposition</s>
+  </sc>
+  <sc id="6f8ace7d-f7b0-4e6f-91a9-1bd7d87de9ba" ts="2023-06-13T10:21:42.5088942Z" ri="1" rc="1" rr="false">
+    <ntId p="4:1">6cf9c162-1ada-4c60-8901-42bb5e97166c</ntId>
+    <ntId p="6:1">empty</ntId>
+    <s p="8:1">200</s>
+    <s p="10:1">text/plain</s>
+    <s p="11:1">sim_default_Content-Encoding</s>
+    <s p="12:1">sim_default_Content-Disposition</s>
+    <b p="21:1"></b>
+    <s p="22:1">sim_default_Filename</s>
+    <s p="23:1">sim_default_Mimetype</s>
+  </sc>
+</ds>

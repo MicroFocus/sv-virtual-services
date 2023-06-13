@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.1.3.0
+Project("") = "sv-api-ext-logs-project", "sv-api-ext-logs-project\sv-api-ext-logs-project.vproj", "{180C6126-3916-486F-A8B8-56EEB13F720B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{180C6126-3916-486F-A8B8-56EEB13F720B}.Debug|x86.Build.0 = Debug|x86
+		{180C6126-3916-486F-A8B8-56EEB13F720B}.Debug|x86.ActiveCfg = Debug|x86
+		{180C6126-3916-486F-A8B8-56EEB13F720B}.Release|x86.Build.0 = Release|x86
+		{180C6126-3916-486F-A8B8-56EEB13F720B}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

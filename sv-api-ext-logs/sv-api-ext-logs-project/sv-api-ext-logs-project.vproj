@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{180C6126-3916-486F-A8B8-56EEB13F720B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ServerIdentifier>urn:Embedded Server</ServerIdentifier>
+    <ServerUrl />
+    <ProductVersion>3.0</ProductVersion>
+    <ProductEdition>Enterprise</ProductEdition>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="sv-logs Data Model Dataset 001.vsdataset" />
+    <None Include="sv-logs Data Model Dataset 002.vsdataset" />
+    <None Include="sv-logs Data Model Dataset 003.vsdataset" />
+    <None Include="sv-logs Data Model Dataset 004.vsdataset" />
+    <None Include="sv-logs Data Model Dataset 005.vsdataset" />
+    <None Include="sv-logs Data Model Dataset 006.vsdataset" />
+    <None Include="sv-logs Data Model Dataset 007.vsdataset" />
+    <None Include="sv-logs Data Model Dataset 008.vsdataset" />
+    <None Include="sv-logs Data Model Dataset 009.vsdataset" />
+    <None Include="sv-logs Data Model Dataset 010.vsdataset" />
+    <None Include="sv-logs Data Model Dataset 011.vsdataset" />
+    <None Include="sv-logs Data Model Dataset.vsdataset" />
+    <None Include="sv-logs Data Model.vsmodel" />
+    <None Include="sv-logs Limited Performance Model.vspfmodel" />
+    <None Include="sv-logs Offline Performance.vspfmodel" />
+    <None Include="sv-logs Performance Model.vspfmodel" />
+    <None Include="sv-logs Service Description.vsdsc" />
+    <None Include="sv-logs.vs" />
+    <None Include="sv-logs.vsmf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LogSharedHelper.cs">
+      <id>4fc4db6b-ac1e-4ab8-be48-f56717b9bf40</id>
+      <purpose>CSharpScript</purpose>
+    </Content>
+  </ItemGroup>
+</Project>
