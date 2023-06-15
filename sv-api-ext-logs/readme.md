@@ -2,8 +2,10 @@
 
 ## Prerequisites
 
-It works out of the box on Linux, but on Windows you need to add following assemblies to the `%SERVER-INSTALL-FOLDER%/bin/Config/scripted-rule-context.xml`
-`System.IO.Compression.ZipFile,System.IO.Compression.FileSystem`
+It works out of the box on Linux, but on Windows you need to add `System.IO.Compression.ZipFile,System.IO.Compression.FileSystem` to `ReferenceAssemblies` in a file `%SERVER-INSTALL-FOLDER%/bin/Config/scripted-rule-context.xml`
+
+So it would look similar to this:
+`<property name="ReferenceAssemblies" value="Newtonsoft.Json,NPOI,NPOI.OOXML,NPOI.OpenXml4Net,NPOI.OpenXmlFormats,System.IO.Compression,Npgsql,System.IO.Compression.ZipFile,System.IO.Compression.FileSystem" />`
 
 ## Usage
 
