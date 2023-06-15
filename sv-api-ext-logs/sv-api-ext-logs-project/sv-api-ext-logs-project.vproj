@@ -5,7 +5,8 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ServerIdentifier>urn:Embedded Server</ServerIdentifier>
-    <ServerUrl />
+    <ServerUrl>
+    </ServerUrl>
     <ProductVersion>3.0</ProductVersion>
     <ProductEdition>Enterprise</ProductEdition>
   </PropertyGroup>

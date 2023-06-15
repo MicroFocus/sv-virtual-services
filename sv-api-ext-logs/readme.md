@@ -34,7 +34,7 @@ http://localhost:6070/sv-api-ext/log/server/view
 
 ## Changelog
 
-2023-06-05
+2023-06-15
    * Entering wrong path now shows help
    * Fixed SVM log access on Linux
    * Updated prerequisites doc 
