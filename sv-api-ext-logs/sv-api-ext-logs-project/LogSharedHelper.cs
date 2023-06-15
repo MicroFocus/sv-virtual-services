@@ -13,7 +13,8 @@ namespace HP.SV {
         private static string ServerLogFolderWindows = @"c:\ProgramData\Micro Focus\Service Virtualization Server\logs";
         private static string ServerLogFolderLinux = "/opt/microfocus/sv-server/logs/server";
         public static string ServerLogFilename = "HP.SV.StandaloneServer.log";
-        public static string SvmLogFilename = "HP.SV.ServiceVirtualizationManagement.log";
+        public static string SvmLogFilenameWindows = "HP.SV.ServiceVirtualizationManagement.log";
+        public static string SvmLogFilenameLinux = "HP.SV.ServiceVirtualizationManager.log";
         public static string LicenseUtilityLogFilename = "LicenseUtility.log";
 
         public enum LogType {
@@ -61,7 +62,7 @@ namespace HP.SV {
         public static byte[] GetFileContentAsGzippedBytes(string path) {
             using (FileStream originalFileStream = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite)) {
                 using (MemoryStream compressedStream = new MemoryStream()) {
-                    using (GZipStream compressor = new GZipStream(compressedStream, CompressionMode.Compress)) {
+                    using (GZipStream compressor = new GZipStream(compressedStream, CompressionMode.Compress, false)) {
                         originalFileStream.CopyTo(compressor);
                     }
                     compressedStream.Flush();
@@ -74,21 +75,21 @@ namespace HP.SV {
             return RuntimeInformation.IsOSPlatform(OSPlatform.Linux) ? ServerLogFolderLinux : ServerLogFolderWindows;
         }
 
-        public static string GetLogPath(LogType logType) {
-            string logFolder = GetLogFolder();
-
-            string logFile = "UNKNOWN";
+        public static string GetLogFilename(LogType logType) {
             switch (logType) {
                 case LogType.Server:
-                    logFile = ServerLogFilename;
-                    break;
+                    return ServerLogFilename;
                 case LogType.Svm:
-                    logFile = SvmLogFilename;
-                    break;
+                    return RuntimeInformation.IsOSPlatform(OSPlatform.Linux) ? SvmLogFilenameLinux : SvmLogFilenameWindows;
                 case LogType.LicenseUtility:
-                    logFile = LicenseUtilityLogFilename;
-                    break;
+                    return LicenseUtilityLogFilename;
             }
+            return "UNKNOWN";
+        }
+
+        public static string GetLogPath(LogType logType) {
+            string logFolder = GetLogFolder();
+            string logFile = GetLogFilename(logType);
             return Path.Combine(logFolder, logFile);
         }
 
@@ -106,7 +107,6 @@ namespace HP.SV {
                 //sv.GetOrCreate(x => x.Response.HTTPOutputParameters.Headers).Content_Encoding = "gzip";
                 sv.GetOrCreate(x => x.Response.HTTPOutputParameters.Headers).Content_Encoding = null;
 
-                //binaryData = Encoding.UTF8.GetBytes(logContent);
                 statusCode = 200;
             } else {
                 binaryData = Encoding.UTF8.GetBytes($"There is no log file {logFilePath}");

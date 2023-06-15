@@ -246,5 +246,22 @@
       </vs:output>
       <vs:dataMaskings />
     </vs:operation>
+    <vs:operation id="fc1a809a-1237-4cb6-a03e-6ffbd49ad5b9" name="** {UriPath = **}">
+      <vs:metadata name="OperationDiscriminators">
+        <vs:operationDiscriminators>
+          <vs:operationDiscriminator name="UriPath">**</vs:operationDiscriminator>
+        </vs:operationDiscriminators>
+      </vs:metadata>
+      <vs:input>
+        <vs:message id="empty" name="No content" />
+      </vs:input>
+      <vs:output>
+        <vs:message id="empty" name="No content" />
+        <vs:message id="79c7a59f-2b5e-47ab-bf99-1c128c6993ec" name="BinaryContent">
+          <vs:part element="ns2:BinaryContent" processor="http://hp.com/SOAQ/ServiceVirtualization/2010/BINARY" />
+        </vs:message>
+      </vs:output>
+      <vs:dataMaskings />
+    </vs:operation>
   </vs:operations>
 </vs:serviceDescription>

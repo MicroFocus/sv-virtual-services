@@ -24,6 +24,8 @@
     <None Include="sv-logs Data Model Dataset 009.vsdataset" />
     <None Include="sv-logs Data Model Dataset 010.vsdataset" />
     <None Include="sv-logs Data Model Dataset 011.vsdataset" />
+    <None Include="sv-logs Data Model Dataset 012.vsdataset" />
+    <None Include="sv-logs Data Model Dataset 013.vsdataset" />
     <None Include="sv-logs Data Model Dataset.vsdataset" />
     <None Include="sv-logs Data Model.vsmodel" />
     <None Include="sv-logs Limited Performance Model.vspfmodel" />

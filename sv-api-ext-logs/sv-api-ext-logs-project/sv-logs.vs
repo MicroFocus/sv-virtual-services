@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<vs:virtualService version="5.6.0.1533" id="4f43d4ae-94a8-41e5-9461-62eeeb1c772f" name="sv-api-ext-logs" description="Virtual service using REST" activeConfiguration="87d3606c-bdf5-42fb-b119-f581e2e4aada" nonExistentRealService="true" xmlns:vs="http://hp.com/SOAQ/ServiceVirtualization/2010/">
+<vs:virtualService version="5.6.0.1533" id="4f43d4ae-94a8-41e5-9461-62eeeb1c772f" name="sv-api-ext-logs v2023-06-05" description="Virtual service using REST" activeConfiguration="87d3606c-bdf5-42fb-b119-f581e2e4aada" nonExistentRealService="true" xmlns:vs="http://hp.com/SOAQ/ServiceVirtualization/2010/">
   <vs:projectId ref="{180C6126-3916-486F-A8B8-56EEB13F720B}" />
   <vs:projectName>sv-api-ext-logs-project</vs:projectName>
   <vs:serviceDescription ref="3d41a42f-1fe8-4933-af64-02bbb8d7a11e" />

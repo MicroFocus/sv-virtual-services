@@ -18,6 +18,8 @@
       <Ref id="3b23248f-50a7-4de0-85d5-cc79ec88ba4f" />
       <Ref id="3d41a42f-1fe8-4933-af64-02bbb8d7a11e" />
       <Ref id="4fc4db6b-ac1e-4ab8-be48-f56717b9bf40" />
+      <Ref id="87e583b5-0d12-4225-a0d4-75527026dbca" />
+      <Ref id="b0572e82-2535-475c-bdd3-e868ff0f0712" />
       <Ref id="b4233720-cb63-4065-af2e-dff828c95dca" />
       <Ref id="bf08f1bf-43be-43c6-9163-27c4536e6b56" />
       <Ref id="c9f0c341-b69a-48d8-afba-bd692e3422d8" />
@@ -76,6 +78,12 @@
     <References />
   </Item>
   <Item id="c9f0c341-b69a-48d8-afba-bd692e3422d8" type="Dataset" contentHashcode="1772188736">
+    <References />
+  </Item>
+  <Item id="b0572e82-2535-475c-bdd3-e868ff0f0712" type="Dataset" contentHashcode="592445928">
+    <References />
+  </Item>
+  <Item id="87e583b5-0d12-4225-a0d4-75527026dbca" type="Dataset" contentHashcode="924774412">
     <References />
   </Item>
 </deploymentManifest>
