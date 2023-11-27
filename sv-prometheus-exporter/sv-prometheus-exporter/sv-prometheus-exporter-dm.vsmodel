@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataModel version="5.9.0.1616" id="1d74497a-6084-4608-8681-a0bfb64a0a52" name="sv-prometheus-exporter-dm" description="Data Model for Prometheus Exporter" parentServiceId="a447a5f4-b28e-4a2b-a937-5bad22457fdb" serviceDescription="22d8e31c-8b97-4307-b5f5-5f296289b230" realServiceForwardingEnabled="false" xmlns="http://hp.com/SOAQ/ServiceVirtualization/2010/">
+  <serviceDescriptions>
+    <serviceDescription serviceDescriptionId="22d8e31c-8b97-4307-b5f5-5f296289b230" />
+  </serviceDescriptions>
+  <serviceOperations>
+    <serviceOperation id="c53e3358-cc3e-440c-bc06-d1d9ba35593e" operationId="any-uri-operation">
+      <activities>
+        <requestActivity id="1" name="Request" serviceDescriptionId="22d8e31c-8b97-4307-b5f5-5f296289b230" operationId="any-uri-operation" />
+        <responseActivity id="2" name="Response" serviceDescriptionId="22d8e31c-8b97-4307-b5f5-5f296289b230" operationId="any-uri-operation" />
+      </activities>
+      <serviceCallSchema operationId="any-uri-operation" operationName="**" timeStamp="638363781340427244">
+        <xpointerTree r="1" m="21">
+          <i v="1" c="2,3" />
+          <i v="2" p="1" c="6,7" />
+          <i v="3" p="1" c="4,5,18" />
+          <i v="4" p="1,3" />
+          <i v="5" p="1,3" c="8,9" />
+          <i v="6" p="1,2" />
+          <i v="7" p="1,2" c="11,12,13,14,15,16,17" />
+          <i v="8" p="1,3,5" />
+          <i v="9" p="1,3,5" c="10" />
+          <i v="10" p="1,3,5,9" />
+          <i v="11" p="1,2,7" />
+          <i v="12" p="1,2,7" />
+          <i v="13" p="1,2,7" />
+          <i v="14" p="1,2,7" />
+          <i v="15" p="1,2,7" />
+          <i v="16" p="1,2,7" />
+          <i v="17" p="1,2,7" />
+          <i v="18" p="1,3" c="19,20,21" />
+          <i v="19" p="1,3,18" />
+          <i v="20" p="1,3,18" />
+          <i v="21" p="1,3,18" />
+        </xpointerTree>
+        <arrayPointerTree r="1" m="1">
+          <i v="1" />
+        </arrayPointerTree>
+        <entityIdCache nfIndex="1">
+          <item id="22d8e31c-8b97-4307-b5f5-5f296289b230" index="0" refCount="2" />
+        </entityIdCache>
+        <serviceTypes>
+          <complexSchemaType sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/BINARY)xpath(ns0:BinaryContent/type::*)" dname="Type of element 'BinaryContent'">
+            <children>
+              <ed ndId="Data" dname="Data" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/BINARY)xpath(ns0:BinaryContent/type::*)" stSdId="0" stNtId="xmlns(ns0=http://www.w3.org/2001/XMLSchema)xpath(type::ns0:base64Binary)" name="Data" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/BINARY" editable="false" defaultValue="" />
+              <ed ndId="Filename" dname="Filename" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/BINARY)xpath(ns0:BinaryContent/type::*)" stSdId="0" stNtId="xmlns(ns0=http://www.w3.org/2001/XMLSchema)xpath(type::ns0:string)" name="Filename" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/BINARY" editable="false" />
+              <ed ndId="Mimetype" dname="Mimetype" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/BINARY)xpath(ns0:BinaryContent/type::*)" stSdId="0" stNtId="xmlns(ns0=http://www.w3.org/2001/XMLSchema)xpath(type::ns0:string)" name="Mimetype" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/BINARY" editable="false" />
+            </children>
+          </complexSchemaType>
+          <complexSchemaType sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*)" dname="Type of element 'HTTPInputParameters'">
+            <children>
+              <ed ndId="UriPath" dname="UriPath" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*)" stSdId="0" stNtId="xmlns(ns0=http://www.w3.org/2001/XMLSchema)xpath(type::ns0:string)" name="UriPath" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP" editable="false" discriminatorName="UriPath" />
+              <ed ndId="ClientAddress" dname="ClientAddress" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*)" stSdId="0" stNtId="xmlns(ns0=http://www.w3.org/2001/XMLSchema)xpath(type::ns0:string)" name="ClientAddress" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP" editable="false" />
+              <ed ndId="Parameters" dname="Parameters" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*)" stSdId="0" stNtId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*/groupBase::*/ns0:Parameters/type::*)" name="Parameters" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP" editable="false" />
+              <ed ndId="UnnamedParameters" dname="UnnamedParameters" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*)" stSdId="0" stNtId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*/groupBase::*/ns0:UnnamedParameters/type::*)" name="UnnamedParameters" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP" editable="false" />
+              <ed ndId="Headers" dname="Headers" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*)" stSdId="0" stNtId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*/groupBase::*/ns0:Headers/type::*)" name="Headers" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP" editable="false" />
+              <ed ndId="Method" dname="Method" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*)" stSdId="0" stNtId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*/groupBase::*/ns0:Method/type::*)" name="Method" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP" editable="false" />
+              <ed ndId="Transport" dname="Transport" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*)" stSdId="0" stNtId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*/groupBase::*/ns0:Transport/type::*)" name="Transport" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP" editable="false" />
+            </children>
+          </complexSchemaType>
+          <complexSchemaType sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*/groupBase::*/ns0:Headers/type::*)" dname="Type of element 'Headers'">
+            <children />
+          </complexSchemaType>
+          <enumerationSchemaType sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*/groupBase::*/ns0:Method/type::*)" dname="Type of element 'Method'">
+            <typeFamily>String</typeFamily>
+            <xmlTypeCode>String</xmlTypeCode>
+            <facets>
+              <enumeration>
+                <value>DELETE</value>
+                <value>GET</value>
+                <value>HEAD</value>
+                <value>OPTIONS</value>
+                <value>POST</value>
+                <value>PUT</value>
+                <value>PATCH</value>
+                <value>TRACE</value>
+              </enumeration>
+            </facets>
+            <value>DELETE</value>
+            <value>GET</value>
+            <value>HEAD</value>
+            <value>OPTIONS</value>
+            <value>POST</value>
+            <value>PUT</value>
+            <value>PATCH</value>
+            <value>TRACE</value>
+          </enumerationSchemaType>
+          <complexSchemaType sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*/groupBase::*/ns0:Parameters/type::*)" dname="Type of element 'Parameters'">
+            <children />
+          </complexSchemaType>
+          <enumerationSchemaType sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*/groupBase::*/ns0:Transport/type::*)" dname="Type of element 'Transport'">
+            <typeFamily>String</typeFamily>
+            <xmlTypeCode>String</xmlTypeCode>
+            <facets>
+              <enumeration>
+                <value>HTTP</value>
+                <value>HTTPS</value>
+              </enumeration>
+            </facets>
+            <value>HTTP</value>
+            <value>HTTPS</value>
+          </enumerationSchemaType>
+          <complexSchemaType sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*/groupBase::*/ns0:UnnamedParameters/type::*)" dname="Type of element 'UnnamedParameters'">
+            <children />
+          </complexSchemaType>
+          <complexSchemaType sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPOutputParameters/type::*)" dname="Type of element 'HTTPOutputParameters'">
+            <children>
+              <ed ndId="StatusCode" dname="StatusCode" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPOutputParameters/type::*)" stSdId="0" stNtId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPOutputParameters/type::*/groupBase::*/ns0:StatusCode/type::*)" name="StatusCode" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP" editable="false" defaultValue="200" />
+              <ed ndId="Headers" dname="Headers" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPOutputParameters/type::*)" stSdId="0" stNtId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPOutputParameters/type::*/groupBase::*/ns0:Headers/type::*)" name="Headers" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP" editable="false" />
+            </children>
+          </complexSchemaType>
+          <complexSchemaType sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPOutputParameters/type::*/groupBase::*/ns0:Headers/type::*)" dname="Type of element 'Headers'">
+            <children>
+              <ed ndId="Content-Type" dname="Content-Type" defKind="Element" sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPOutputParameters/type::*/groupBase::*/ns0:Headers/type::*)" stSdId="0" stNtId="xmlns(ns0=http://www.w3.org/2001/XMLSchema)xpath(type::ns0:string)" name="Content-Type" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP" editable="false" defaultValue="text/plain" />
+            </children>
+          </complexSchemaType>
+          <simpleSchemaType sdId="0" ntId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPOutputParameters/type::*/groupBase::*/ns0:StatusCode/type::*)" dname="Type of element 'StatusCode'">
+            <typeFamily>Integer</typeFamily>
+            <xmlTypeCode>Int</xmlTypeCode>
+            <facets>
+              <maxInclusive>599</maxInclusive>
+              <minInclusive>100</minInclusive>
+            </facets>
+          </simpleSchemaType>
+          <simpleSchemaType sdId="0" ntId="xmlns(ns0=http://www.w3.org/2001/XMLSchema)xpath(type::ns0:base64Binary)" dname="base64Binary">
+            <typeFamily>Base64Binary</typeFamily>
+            <xmlTypeCode>Base64Binary</xmlTypeCode>
+            <facets />
+          </simpleSchemaType>
+          <simpleSchemaType sdId="0" ntId="xmlns(ns0=http://www.w3.org/2001/XMLSchema)xpath(type::ns0:string)" dname="string">
+            <typeFamily>String</typeFamily>
+            <xmlTypeCode>String</xmlTypeCode>
+            <facets />
+          </simpleSchemaType>
+        </serviceTypes>
+        <activityRoots>
+          <activityRootSchemaType activityId="1" activityInOut="Output" xPointer="2" sdId="0" ntId="Input:any-uri-operation" dname="OperationInputBase">
+            <childrenOfSubtypes>
+              <ed ndId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters)" dname="HTTPInputParameters" defKind="Element" sdId="0" ntId="common-input" stSdId="0" stNtId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPInputParameters/type::*)" name="HTTPInputParameters" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP" editable="false" />
+            </childrenOfSubtypes>
+            <subTypes>
+              <subTypeId ntId="empty" />
+            </subTypes>
+            <typeSelector />
+            <superTypes>
+              <nodeType ntId="empty">
+                <superTypeId ntId="empty" />
+                <superTypeId ntId="Input:any-uri-operation" />
+                <superTypeId ntId="common-input" />
+              </nodeType>
+            </superTypes>
+            <subTypeDisplayNames>
+              <nodeType ntId="empty" displayName="No content" />
+            </subTypeDisplayNames>
+          </activityRootSchemaType>
+          <activityRootSchemaType activityId="2" activityInOut="Input" xPointer="3" sdId="0" ntId="Output:any-uri-operation" dname="OperationOutputBase">
+            <childrenOfSubtypes>
+              <ed ndId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPOutputParameters)" dname="HTTPOutputParameters" defKind="Element" sdId="0" ntId="common-output" stSdId="0" stNtId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP)xpath(ns0:HTTPOutputParameters/type::*)" name="HTTPOutputParameters" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/HTTP" editable="false" />
+              <ed ndId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/BINARY)xpath(ns0:BinaryContent)" dname="BinaryContent" defKind="Element" sdId="0" ntId="0b621cfb-5cbd-44ea-92e4-4ad80e8d8227" stSdId="0" stNtId="xmlns(ns0=http://hp.com/SOAQ/ServiceVirtualization/2010/BINARY)xpath(ns0:BinaryContent/type::*)" name="BinaryContent" namespace="http://hp.com/SOAQ/ServiceVirtualization/2010/BINARY" editable="false" />
+            </childrenOfSubtypes>
+            <subTypes>
+              <subTypeId ntId="empty" />
+              <subTypeId ntId="0b621cfb-5cbd-44ea-92e4-4ad80e8d8227" />
+            </subTypes>
+            <typeSelector />
+            <superTypes>
+              <nodeType ntId="empty">
+                <superTypeId ntId="empty" />
+                <superTypeId ntId="Output:any-uri-operation" />
+                <superTypeId ntId="common-output" />
+              </nodeType>
+              <nodeType ntId="0b621cfb-5cbd-44ea-92e4-4ad80e8d8227">
+                <superTypeId ntId="0b621cfb-5cbd-44ea-92e4-4ad80e8d8227" />
+                <superTypeId ntId="Output:any-uri-operation" />
+                <superTypeId ntId="common-output" />
+              </nodeType>
+            </superTypes>
+            <subTypeDisplayNames>
+              <nodeType ntId="empty" displayName="No content" />
+              <nodeType ntId="0b621cfb-5cbd-44ea-92e4-4ad80e8d8227" displayName="BinaryContent" />
+            </subTypeDisplayNames>
+          </activityRootSchemaType>
+        </activityRoots>
+        <arrayEnvelopeXPointer />
+      </serviceCallSchema>
+    </serviceOperation>
+  </serviceOperations>
+  <rules>
+    <scriptedRule id="9a715de6-0f86-42db-b814-096b7ed60d3f" name="CSharp Script" description="C# rule." engine="CSharp" skipFirstPass="true" executeOnlyOnce="true" />
+    <learned id="22af1826-a761-4047-8944-06eff8dc9e7f" name="Learned Data" description="All of the data collected during the Learning phase" dbl="true" />
+    <default id="77cec196-11e2-4b57-8f1c-c34ab20b88b9" name="Default Response" description="The default response when no matches were found" />
+  </rules>
+  <serviceOperationRules>
+    <serviceOperationScriptedRule id="4adf804f-00c4-45d4-8826-fa80b20d4bf4" name="Rule 4adf804f-00c4-45d4-8826-fa80b20d4bf4" serviceOperationId="c53e3358-cc3e-440c-bc06-d1d9ba35593e" ruleId="9a715de6-0f86-42db-b814-096b7ed60d3f" inScope="true">
+      <includedFiles />
+      <script>using HP.SV.DotNetRuleApi;&#xD;
+using HP.SV.CSharp;&#xD;
+using System.Net.Http;&#xD;
+using System;&#xD;
+using System.Xml;&#xD;
+using System.Text;&#xD;
+&#xD;
+namespace HP.SV&#xD;
+{&#xD;
+    /// &lt;summary&gt;&#xD;
+    /// Generates response message containing Prometheus metrics of SV Server running on localhost.&#xD;
+    /// &#xD;
+    /// Data model: https://prometheus.io/docs/concepts/data_model/&#xD;
+    /// Metric types: https://prometheus.io/docs/tutorials/understanding_metric_types/&#xD;
+    /// Metric and label naming: https://prometheus.io/docs/practices/naming/&#xD;
+    /// &lt;/summary&gt;&#xD;
+    public class CSharpRule&#xD;
+    {&#xD;
+        private static string SITE_SCOPE_URL = "https://localhost:6085/SiteScope/cgi/go.exe/SiteScope";&#xD;
+        private static string SERVER_STATISTICS_URL = "https://localhost:6085/api/serverStatistics";&#xD;
+        private static string SERVER_API = "https://localhost:6085/api";&#xD;
+&#xD;
+        public static void Execute(HpsvRootObject sv)&#xD;
+        {&#xD;
+            StringBuilder result = new StringBuilder();&#xD;
+&#xD;
+            ExtractApiEndpointData(sv, result);&#xD;
+            ExtractServerStatisticsData(sv, result);&#xD;
+            ExtractSiteScopeData(sv, result);&#xD;
+&#xD;
+            byte[] binaryData = Encoding.UTF8.GetBytes(result.ToString());&#xD;
+            sv.Response.Type = "BinaryContent";&#xD;
+            sv.Response.BinaryContent = new Type_of_element_BinaryContent();&#xD;
+            sv.Response.BinaryContent.Data = Convert.ToBase64String(binaryData);&#xD;
+        }&#xD;
+&#xD;
+        #region SharedMethods&#xD;
+		public static string SV_SERVER_METRIC_PREFIX = "sv_server";&#xD;
+        public static string SV_VS_METRIC_PREFIX = "sv_vs";&#xD;
+        &#xD;
+        /// &lt;summary&gt;&#xD;
+        /// Returns Prometheus metric name with SV_SERVER_METRIC_PREFIX.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        /// &lt;param name="metricName"&gt;base metric name (without prefix)&lt;/param&gt;&#xD;
+        public static string GetPrometheusMetricName(string metricName)&#xD;
+        {&#xD;
+            return GetMetricName(SV_SERVER_METRIC_PREFIX, metricName, null, null);&#xD;
+        }&#xD;
+&#xD;
+        public static string GetPrometheusMetricName(string prefix, string metricName)&#xD;
+        {&#xD;
+            return GetMetricName(prefix, metricName, null, null);&#xD;
+        }&#xD;
+&#xD;
+        public static string GetMetricName(string prefix, string metricName, string labelName, string labelValue)&#xD;
+        {&#xD;
+            if (prefix == null)&#xD;
+            {&#xD;
+                prefix = SV_SERVER_METRIC_PREFIX;&#xD;
+            }&#xD;
+&#xD;
+            if (labelName == null || labelValue == null)&#xD;
+            {&#xD;
+                return prefix + '_' + metricName;&#xD;
+            } else {&#xD;
+                return prefix + '_' + metricName + '{' + labelName + "=\"" + labelValue + "\"}";&#xD;
+            }&#xD;
+        }&#xD;
+&#xD;
+        public static void AppendPrometheusMetric(StringBuilder sb, string name, string value, string help, string type)&#xD;
+        {&#xD;
+            string nameWithoutLabels = name;&#xD;
+            if (nameWithoutLabels.Contains("{"))&#xD;
+            {&#xD;
+                nameWithoutLabels = nameWithoutLabels.Substring(0, nameWithoutLabels.IndexOf('{'));&#xD;
+            }&#xD;
+&#xD;
+            sb.Append("# HELP ").Append(nameWithoutLabels).Append(' ').Append(help).Append("\n");&#xD;
+            sb.Append("# TYPE ").Append(nameWithoutLabels).Append(' ').Append(type).Append("\n");&#xD;
+            sb.Append(name).Append(' ').Append(value).Append("\n");&#xD;
+        }&#xD;
+        &#xD;
+        public static string GetXmlAttributeValue(XmlElement xmlElement, string xpath)&#xD;
+        {&#xD;
+            XmlAttribute attr = (XmlAttribute)xmlElement.SelectSingleNode(xpath);&#xD;
+            return attr.Value;&#xD;
+        }&#xD;
+&#xD;
+        public static void ConvertXmlAttributeToPrometheusVirtualServiceMetric(XmlElement element, StringBuilder result, string xpath, string baseMetricName, string vsName, string help, string type, Func&lt;string, string&gt; convertor = null)&#xD;
+        {&#xD;
+            string value = GetXmlAttributeValue(element, xpath);&#xD;
+            if (convertor != null)&#xD;
+            {&#xD;
+                value = convertor.Invoke(value);&#xD;
+            }&#xD;
+            string metricName = GetMetricName(SV_VS_METRIC_PREFIX, baseMetricName, "name", vsName);&#xD;
+            AppendPrometheusMetric(result, metricName, value, help, type);&#xD;
+        }&#xD;
+&#xD;
+        public static void ConvertXmlAttributeToPrometheusServerMetric(XmlElement element, StringBuilder result, string xpath, string baseMetricName, string help, string type, Func&lt;string, string&gt; convertor = null)&#xD;
+        {&#xD;
+            string value = GetXmlAttributeValue(element, xpath);&#xD;
+            if (convertor != null)&#xD;
+            {&#xD;
+                value = convertor.Invoke(value);&#xD;
+            }&#xD;
+            string metricName = GetPrometheusMetricName(baseMetricName);&#xD;
+            AppendPrometheusMetric(result, metricName, value, help, type);&#xD;
+        }&#xD;
+        &#xD;
+       public static HttpResponseMessage HttpGet(string url, HpsvLogger logger)&#xD;
+        {&#xD;
+            try&#xD;
+            {&#xD;
+                HttpClient client = new HttpClient();&#xD;
+&#xD;
+                HttpResponseMessage response = client.GetAsync(url).Result;&#xD;
+                if (!response.IsSuccessStatusCode)&#xD;
+                {&#xD;
+                    logger.Error(string.Format("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase));&#xD;
+                }&#xD;
+                return response;&#xD;
+            }&#xD;
+            catch (Exception e)&#xD;
+            {&#xD;
+                LogError(e, logger);&#xD;
+            }&#xD;
+&#xD;
+            return null;&#xD;
+        }&#xD;
+&#xD;
+        public static void LogError(Exception e, HpsvLogger logger)&#xD;
+        {&#xD;
+            logger.Error(e);&#xD;
+            while (e != null)&#xD;
+            {&#xD;
+                logger.Error(e.StackTrace.ToString());&#xD;
+                e = e.InnerException;&#xD;
+            }&#xD;
+        }&#xD;
+&#xD;
+        #endregion&#xD;
+&#xD;
+        public static void ExtractSiteScopeData(HpsvRootObject sv, StringBuilder result)&#xD;
+        {&#xD;
+            try&#xD;
+            {&#xD;
+                HttpResponseMessage stats = HttpGet(SITE_SCOPE_URL, sv.Logger);&#xD;
+                string responsePayload = stats.Content.ReadAsStringAsync().Result;&#xD;
+&#xD;
+                XmlDocument xmlDocument = new XmlDocument();&#xD;
+                xmlDocument.LoadXml(responsePayload);&#xD;
+                // navigate to /PerformanceMonitor/object[0]/object[0]&#xD;
+                XmlElement objectStatisticsElement = (XmlElement)xmlDocument.DocumentElement.FirstChild.FirstChild;&#xD;
+&#xD;
+                // convert server-level data&#xD;
+                ConvertXmlAttributeToPrometheusServerMetric(objectStatisticsElement, result,&#xD;
+                    "counter[@name='TransactionsPerSeconds']/@val",&#xD;
+                    "tps",&#xD;
+                    "Current transactions per second across all virtual services",&#xD;
+                    "gauge");&#xD;
+&#xD;
+                ConvertXmlAttributeToPrometheusServerMetric(objectStatisticsElement, result,&#xD;
+                    "counter[@name='ResponseTime']/@val",&#xD;
+                    "response_time_seconds_avg",&#xD;
+                    "Current response time average across all virtual services",&#xD;
+                    "gauge",&#xD;
+                    x =&gt; (Convert.ToDouble(x) / 1000).ToString());&#xD;
+&#xD;
+                ConvertXmlAttributeToPrometheusServerMetric(objectStatisticsElement, result,&#xD;
+                    "counter[@name='Throughput']/@val",&#xD;
+                    "data_throughput_bytes_per_second",&#xD;
+                    "Current SV Server data throughput in bytes",&#xD;
+                    "gauge");&#xD;
+&#xD;
+                ConvertXmlAttributeToPrometheusServerMetric(objectStatisticsElement, result,&#xD;
+                    "counter[@name='Connections']/@val",&#xD;
+                    "client_hosts_count",&#xD;
+                    "Current count of remotely connected hosts (machines)",&#xD;
+                    "gauge");&#xD;
+&#xD;
+                ConvertXmlAttributeToPrometheusServerMetric(objectStatisticsElement, result,&#xD;
+                    "counter[@name='MessageSize']/@val",&#xD;
+                    "message_size_bytes_avg",&#xD;
+                    "Message size average across all virtual services",&#xD;
+                    "gauge");&#xD;
+&#xD;
+                // process virtual-service-level data&#xD;
+                XmlNode servicesNode = xmlDocument.DocumentElement.SelectSingleNode("//object[@name='Services']");&#xD;
+                XmlNodeList virtualServiceNodes = servicesNode.ChildNodes;&#xD;
+                foreach (XmlNode virtualServiceXmlNode in virtualServiceNodes)&#xD;
+                {&#xD;
+                    XmlElement virtualServiceElement = virtualServiceXmlNode as XmlElement;&#xD;
+                    if (virtualServiceElement != null)&#xD;
+                    {&#xD;
+                        String vsName = virtualServiceElement.GetAttribute("name");&#xD;
+&#xD;
+                        ConvertXmlAttributeToPrometheusVirtualServiceMetric(virtualServiceElement, result,&#xD;
+                            "counter[@name='DataSimulationAccuracy']/@val",&#xD;
+                            "data_simulation_accuracy_ratio",&#xD;
+                            vsName,&#xD;
+                            "Data simulation accuracy percentage",&#xD;
+                            "gauge",&#xD;
+                            x =&gt; (Convert.ToDouble(x) / 100).ToString());&#xD;
+&#xD;
+                        ConvertXmlAttributeToPrometheusVirtualServiceMetric(virtualServiceElement, result,&#xD;
+                            "counter[@name='PerformanceSimulationAccuracy']/@val",&#xD;
+                            "performance_simulation_accuracy_ratio",&#xD;
+                            vsName,&#xD;
+                            "Performance simulation accuracy percentage",&#xD;
+                            "gauge",&#xD;
+                            x =&gt; (Convert.ToDouble(x) / 100).ToString());&#xD;
+&#xD;
+                        ConvertXmlAttributeToPrometheusVirtualServiceMetric(virtualServiceElement, result,&#xD;
+                            "counter[@name='Throughput']/@val",&#xD;
+                            "data_throughput_bytes_per_second",&#xD;
+                            vsName,&#xD;
+                            "Current data throughput in bytes/s",&#xD;
+                            "gauge");&#xD;
+&#xD;
+                        ConvertXmlAttributeToPrometheusVirtualServiceMetric(virtualServiceElement, result,&#xD;
+                            "counter[@name='TransactionsPerSeconds']/@val",&#xD;
+                            "tps",&#xD;
+                            vsName,&#xD;
+                            "Current virtual service transactions per second",&#xD;
+                            "gauge");&#xD;
+&#xD;
+                        ConvertXmlAttributeToPrometheusVirtualServiceMetric(virtualServiceElement, result,&#xD;
+                            "counter[@name='AverageResponseTime']/@val",&#xD;
+                            "response_time_seconds_avg",&#xD;
+                            vsName,&#xD;
+                            "Current virtual response time average in seconds",&#xD;
+                            "gauge",&#xD;
+                            x =&gt; (Convert.ToDouble(x) / (double)1000).ToString());&#xD;
+                    }&#xD;
+                }&#xD;
+&#xD;
+            } catch (Exception ex)&#xD;
+            {&#xD;
+                LogError(ex, sv.Logger);&#xD;
+            }&#xD;
+        }&#xD;
+&#xD;
+        public static void ExtractServerStatisticsData(HpsvRootObject sv, StringBuilder result)&#xD;
+        {&#xD;
+            try&#xD;
+            {&#xD;
+                HttpResponseMessage stats = HttpGet(SERVER_STATISTICS_URL, sv.Logger);&#xD;
+                string responsePayload = stats.Content.ReadAsStringAsync().Result;&#xD;
+&#xD;
+                XmlDocument xmlDocument = new XmlDocument();&#xD;
+                xmlDocument.LoadXml(responsePayload);&#xD;
+                XmlElement serverStatisticsElement = xmlDocument.DocumentElement;&#xD;
+&#xD;
+                ConvertXmlAttributeToPrometheusServerMetric(serverStatisticsElement, result,&#xD;
+                    "@cpuUsage",&#xD;
+                    "cpu_utilization_ratio",&#xD;
+                    "CPU utilization percentage",&#xD;
+                    "gauge",&#xD;
+                    x =&gt; (Convert.ToDouble(x) / 100).ToString());&#xD;
+&#xD;
+                ConvertXmlAttributeToPrometheusServerMetric(serverStatisticsElement, result,&#xD;
+                    "@memoryUsage",&#xD;
+                    "memory_utilization_ratio",&#xD;
+                    "Memory utilization percentage",&#xD;
+                    "gauge",&#xD;
+                    x =&gt; (Convert.ToDouble(x) / 100).ToString());&#xD;
+&#xD;
+                ConvertXmlAttributeToPrometheusServerMetric(serverStatisticsElement, result,&#xD;
+                    "@dbResponseTime",&#xD;
+                    "db_response_time_seconds",&#xD;
+                    "Database response time in seconds",&#xD;
+                    "gauge",&#xD;
+                    x =&gt; (Convert.ToDouble(x) / 1000).ToString());&#xD;
+&#xD;
+                ConvertXmlAttributeToPrometheusServerMetric(serverStatisticsElement, result,&#xD;
+                    "@warnings",&#xD;
+                    "sv_server_warnings_total",&#xD;
+                    "SV Server warnings count",&#xD;
+                    "counter");&#xD;
+&#xD;
+                ConvertXmlAttributeToPrometheusServerMetric(serverStatisticsElement, result,&#xD;
+                    "@errors",&#xD;
+                    "sv_server_errors_total",&#xD;
+                    "SV Server errors count",&#xD;
+                    "counter");&#xD;
+            }&#xD;
+            catch (Exception ex)&#xD;
+            {&#xD;
+                LogError(ex, sv.Logger);&#xD;
+            }&#xD;
+        }&#xD;
+&#xD;
+        public static void ExtractApiEndpointData(HpsvRootObject sv, StringBuilder result)&#xD;
+        {&#xD;
+            try&#xD;
+            {&#xD;
+                HttpResponseMessage stats = HttpGet(SERVER_API, sv.Logger);&#xD;
+                string responsePayload = stats.Content.ReadAsStringAsync().Result;&#xD;
+&#xD;
+                string version = responsePayload.Substring(52, 10);&#xD;
+&#xD;
+                AppendPrometheusMetric(result, GetMetricName(SV_SERVER_METRIC_PREFIX, "info", "version", version), "1", "SV info", "gauge");&#xD;
+            }&#xD;
+            catch (Exception ex)&#xD;
+            {&#xD;
+                LogError(ex, sv.Logger);&#xD;
+            }&#xD;
+        }&#xD;
+&#xD;
+&#xD;
+    }&#xD;
+}&#xD;
+</script>
+    </serviceOperationScriptedRule>
+    <serviceOperationDataRule id="8e78fe0e-4e83-4547-9dbc-eb424d28bc96" name="Learned Data" description="All of the data collected during the Learning phase" serviceOperationId="c53e3358-cc3e-440c-bc06-d1d9ba35593e" ruleId="22af1826-a761-4047-8944-06eff8dc9e7f" inScope="true" responseCountFn="Set" responseIndexFn="Is" forwardToRealServiceFn="Set" rowsUsingRealResponse="0">
+      <allActivities />
+      <datasetIds />
+      <nodeFunctions>
+        <ignoreAction targetNodeXPointer="2" />
+        <ignoreCondition targetNodeXPointer="3" />
+        <setAction targetNodeXPointer="3" />
+        <isCondition targetNodeXPointer="6" />
+        <isCondition targetNodeXPointer="11" />
+        <ignoreCondition targetNodeXPointer="12" />
+        <isCondition targetNodeXPointer="13" />
+        <isCondition targetNodeXPointer="14" />
+        <isCondition targetNodeXPointer="15" />
+        <isCondition targetNodeXPointer="16" />
+        <isCondition targetNodeXPointer="17" />
+      </nodeFunctions>
+      <serviceCalls />
+    </serviceOperationDataRule>
+    <serviceOperationDataRule id="f58db9e0-d417-4149-84bf-d1d28cbd29b8" name="Default Response" description="The default response when no matches were found" serviceOperationId="c53e3358-cc3e-440c-bc06-d1d9ba35593e" ruleId="77cec196-11e2-4b57-8f1c-c34ab20b88b9" inScope="true" responseCountFn="Set" responseIndexFn="Ignore" forwardToRealServiceFn="Set" rowsUsingRealResponse="0">
+      <allActivities />
+      <datasetIds>
+        <datasetId>0ac24e42-d00b-483f-88ae-971b6bec9214</datasetId>
+      </datasetIds>
+      <nodeFunctions>
+        <ignoreCondition targetNodeXPointer="2" />
+        <ignoreAction targetNodeXPointer="2" />
+        <isCondition targetNodeXPointer="4" />
+        <ignoreAction targetNodeXPointer="4" />
+        <ignoreCondition targetNodeXPointer="5" />
+        <setAction targetNodeXPointer="5" />
+        <setAction targetNodeXPointer="18" />
+        <ignoreCondition targetNodeXPointer="18" />
+      </nodeFunctions>
+      <serviceCalls>
+        <serviceCall id="f64fe259-1869-46a9-bd42-080394669105" simHc="0" anaHc="821978844" />
+        <serviceCall id="70eb77ee-afeb-49cf-8bed-9e9f84266d78" simHc="0" anaHc="697114061" />
+      </serviceCalls>
+    </serviceOperationDataRule>
+  </serviceOperationRules>
+  <tracks />
+</dataModel>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{76E4A9DE-177F-4DDF-8DE8-87AC87237CFF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ServerIdentifier>https://localhost:6085/api</ServerIdentifier>
+    <ServerUrl>https://localhost:6085/api</ServerUrl>
+    <ProductVersion>3.0</ProductVersion>
+    <ProductEdition>Enterprise</ProductEdition>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="sv-prometheus-exporter-dm Dataset.vsdataset" />
+    <None Include="sv-prometheus-exporter-dm.vsmodel" />
+    <None Include="sv-prometheus-exporter Limited Performance Model.vspfmodel" />
+    <None Include="sv-prometheus-exporter Offline Performance.vspfmodel" />
+    <None Include="sv-prometheus-exporter Performance Model.vspfmodel" />
+    <None Include="sv-prometheus-exporter Service Description.vsdsc" />
+    <None Include="sv-prometheus-exporter.vs" />
+    <None Include="sv-prometheus-exporter.vsmf" />
+  </ItemGroup>
+</Project>
